@@ -29,7 +29,9 @@ class App extends Component {
   }
 
   getNote = (id) => {
-    console.log('Edit button clicked! The id for this note is: ' + id);
+    axios.get( urlFor(`notes/${id}`) )
+    .then((res) => this.setState( { note: res.data, showNote: true }) )
+    .catch( (err) => console.log(err.response.data) );
   }
 
   render() {
