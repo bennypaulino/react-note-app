@@ -6,7 +6,7 @@ class Note extends React.Component {
 
     return (
       <div className="note-container">
-        <form className="note-form">
+        <form className="note-container note-form">
           <input
             className="note-title-input"
             type="text"
