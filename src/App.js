@@ -35,14 +35,15 @@ class App extends Component {
   }
 
   render() {
-    const { showNote, notes } = this.state;
+    const { showNote, notes, note } = this.state;
 
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-         { showNote ? <Note /> : <List getNotes={this.getNotes} 
-                                       notes={notes}
-                                       getNote={this.getNote} /> }
+         { showNote ? <Note note={note} /> 
+                    : <List getNotes={this.getNotes} 
+                            notes={notes}
+                            getNote={this.getNote} /> }
       </div>
     );
   }
