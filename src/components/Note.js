@@ -14,6 +14,7 @@ class Note extends React.Component {
   onTagSubmit(e) {
     e.preventDefault();
     console.log(this.name.value);
+    this.props.closeTagForm();
   }
 
   renderTagForm() {
