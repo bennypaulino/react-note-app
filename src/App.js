@@ -57,6 +57,10 @@ class App extends Component {
     .catch( (err) => console.log(err.response.data) );
   }
 
+  showTagForm = () => {
+    this.setState({ newTag: true });
+  }
+
   render() {
     const { showNote, notes, note } = this.state;
 
