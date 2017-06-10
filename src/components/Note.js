@@ -13,7 +13,7 @@ class Note extends React.Component {
 
   onTagSubmit(e) {
     e.preventDefault();
-    console.log("Here's a new tag!");
+    console.log(this.name.value);
   }
 
   renderTagForm() {
@@ -33,6 +33,7 @@ class Note extends React.Component {
           <input className="tag-input"
                  type="text"
                  placeholder="Tag Name..."
+                 ref={(input) => this.name = input}
           />
         </form>
       )
