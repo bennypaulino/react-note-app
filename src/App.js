@@ -34,13 +34,17 @@ class App extends Component {
     .catch( (err) => console.log(err.response.data) );
   }
 
+  submitNote = (data) => {
+    console.log(data);
+  }
+
   render() {
     const { showNote, notes, note } = this.state;
 
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-         { showNote ? <Note note={note} /> 
+         { showNote ? <Note note={note} submitNote={this.submitNote} />
                     : <List getNotes={this.getNotes} 
                             notes={notes}
                             getNote={this.getNote} /> }
