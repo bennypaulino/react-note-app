@@ -3,6 +3,7 @@ import React from 'react'
 class Note extends React.Component {
 
   onSubmit(e) {
+    e.preventDefault();
     console.log("submit form!")
   }
 
