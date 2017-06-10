@@ -4,7 +4,8 @@ class Note extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    console.log("submit form!")
+    const title = this.title.value;
+    console.log(title)
   }
 
   render() {
@@ -13,12 +14,13 @@ class Note extends React.Component {
     return (
       <div className="note-container">
         <form className="note-container note-form" 
-              onSubmit={(e) => this.onSubmit(e)}>
+              onSubmit={ (e) => this.onSubmit(e) }>
           <input
             className="note-title-input"
             type="text"
             placeholder="Note Title..."
             defaultValue={note.title}
+            ref={ (input) => this.title = input }
           />
           <textarea
             className="note-textarea"
