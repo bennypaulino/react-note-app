@@ -61,6 +61,10 @@ class App extends Component {
     this.setState({ newTag: true });
   }
 
+  closeTagForm = () => {
+    this.setState({ newTag: false });
+  }
+
   render() {
     const { showNote, notes, note, newTag } = this.state;
 
