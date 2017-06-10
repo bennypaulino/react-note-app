@@ -67,7 +67,7 @@ class App extends Component {
 
   submitTag = (data, noteId) => {
     axios.post(urlFor(`notes/${noteId}/tags`), data)
-    .then( (res) => console.log(res) )
+    .then( (res) => this.getNote(noteId) )
     .catch( (err) => console.log(err.response.data) );
   }
 
