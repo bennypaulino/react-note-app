@@ -81,7 +81,8 @@ class App extends Component {
                             submitNote={this.submitNote}
                             showTagForm={this.showTagForm}
                             closeTagForm={this.closeTagForm}
-                            newTag={newTag} />
+                            newTag={newTag}
+                            submitTag={this.submitTag} />
                     : <List getNotes={this.getNotes} 
                             notes={notes}
                             getNote={this.getNote}
