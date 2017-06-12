@@ -21,6 +21,9 @@ class NoteCard extends React.Component {
         <div className="note-card-content">
           {note.content}
         </div>
+        <div className="note-card-tags">
+          {this.renderTags(note)}
+        </div>
         <span className="note-card-delete"
               onClick={() => deleteNote(note.id)}>
           <i className="material-icons">close</i>
