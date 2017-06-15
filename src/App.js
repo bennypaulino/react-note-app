@@ -5,6 +5,7 @@ import List from './components/List';
 import Note from './components/Note';
 import axios from 'axios';
 import urlFor from './helpers/urlFor';
+import Flash from './components/Flash';
 
 class App extends Component {
   constructor() {
@@ -32,7 +33,7 @@ class App extends Component {
 
   getNote = (id) => {
     axios.get( urlFor(`notes/${id}`) )
-    .then((res) => this.setState( { note: res.data, showNote: true }) )
+    .then( (res) => this.setState( { note: res.data, showNote: true }) )
     .catch( (err) => console.log(err.response.data) );
   }
 
@@ -83,17 +84,18 @@ class App extends Component {
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-         { showNote ? <Note note={note}
-                            submitNote={this.submitNote}
-                            showTagForm={this.showTagForm}
-                            closeTagForm={this.closeTagForm}
-                            newTag={newTag}
-                            submitTag={this.submitTag}
-                            deleteTag={this.deleteTag} />
-                    : <List getNotes={this.getNotes} 
-                            notes={notes}
-                            getNote={this.getNote}
-                            deleteNote={this.deleteNote} /> }
+        <Flash />
+        { showNote ? <Note note={note}
+                           submitNote={this.submitNote}
+                           showTagForm={this.showTagForm}
+                           closeTagForm={this.closeTagForm}
+                           newTag={newTag}
+                           submitTag={this.submitTag}
+                           deleteTag={this.deleteTag} />
+                   : <List getNotes={this.getNotes}
+                           notes={notes}
+                           getNote={this.getNote}
+                           deleteNote={this.deleteNote} /> }
       </div>
     );
   }
