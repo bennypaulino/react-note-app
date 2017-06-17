@@ -14,7 +14,8 @@ class App extends Component {
       showNote: false,
       notes: [],
       note: {},
-      newTag: false
+      newTag: false,
+      error: ''
     };
   }
 
@@ -48,7 +49,14 @@ class App extends Component {
   submitNote = (data, id) => {
     this.performSubmissionRequest(data, id)
     .then( (res) => this.setState({ showNote: false }) )
-    .catch( (err) => console.log(err.response.data) );
+    .catch( (err) => {
+      const { errors } = err.response.data;
+      if (errors.content) {
+        this.setState({ error: "That Note Is Missing Content!" });
+      } else if (errors.title) {
+        this.setState({ error: "That Note Is Missing A Title!" });
+      }
+    });
   }
 
   deleteNote = (id) => {
