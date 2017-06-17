@@ -3,9 +3,11 @@ import React from 'react';
 class Flash extends React.Component {
 
   componentDidMount() {
+    let el = document.querySelector('.flash-container');
+    el.classList.add('fade');
     setTimeout(() => {
       this.props.resetError();
-    }, 2500);
+    }, 4000);
   }
 
   render () {
