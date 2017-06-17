@@ -52,9 +52,9 @@ class App extends Component {
     .catch( (err) => {
       const { errors } = err.response.data;
       if (errors.content) {
-        this.setState({ error: "That Note Is Missing Content!" });
+        this.setState({ error: "Note Is Missing Content!" });
       } else if (errors.title) {
-        this.setState({ error: "That Note Is Missing A Title!" });
+        this.setState({ error: "Note Is Missing A Title!" });
       }
     });
   }
