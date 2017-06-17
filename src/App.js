@@ -87,12 +87,12 @@ class App extends Component {
   }
 
   render() {
-    const { showNote, notes, note, newTag } = this.state;
+    const { showNote, notes, note, newTag, error } = this.state;
 
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-        <Flash />
+        { error && <Flash />}
         { showNote ? <Note note={note}
                            submitNote={this.submitNote}
                            showTagForm={this.showTagForm}
