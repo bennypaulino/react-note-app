@@ -91,13 +91,17 @@ class App extends Component {
     .catch((err) => console.log(err.response.data) );
   }
 
+  resetError = () => {
+    this.setState({ error: '' });
+  }
+
   render() {
     const { showNote, notes, note, newTag, error } = this.state;
 
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-        { error && <Flash error={error} />}
+        { error && <Flash error={error} resetError={resetError} />}
         { showNote ? <Note note={note}
                            submitNote={this.submitNote}
                            showTagForm={this.showTagForm}
