@@ -101,7 +101,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav toggleNote={this.toggleNote} showNote={showNote} />
-        { error && <Flash error={error} resetError={resetError} />}
+        { error && <Flash error={error} resetError={this.resetError} />}
         { showNote ? <Note note={note}
                            submitNote={this.submitNote}
                            showTagForm={this.showTagForm}
