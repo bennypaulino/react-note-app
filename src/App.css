@@ -65,7 +65,7 @@
 
 .nav-container {
   height: 60px;
-  background-color: rgb(235, 179, 98);
+  background-color: #8BACCB;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding-left: 40px;
   padding-right: 40px;
@@ -96,7 +96,7 @@
   height: 40px;
   width: 100px;
   background: white;
-  color: rgb(228, 91, 91);
+  color: #C65C2C;
   float: right;
   font-size: 1.5em;
   margin-right: 2px;
@@ -112,16 +112,18 @@
 .nav-button:hover {
   background: rgb(239, 239, 239);
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  color: #5FAF27;
 }
 
 @media only screen and (max-width: 500px) {
   .nav-container {
     height: 60px;
-    background-color: rgb(235, 179, 98);
+    background-color: #8BACCB;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Lobster', cursive;
+    /*font-family: 'Josefin Slab', serif;*/
     letter-spacing: 0.6px;
   }
 
@@ -137,19 +139,26 @@
   }
 
   .nav-button {
-    font-family: 'Josefin Slab', serif;
+    /*font-family: 'Josefin Slab', serif;*/
+    font-family: 'Lobster', cursive;
     height: 30px;
     width: 80px;
     background: white;
-    color: rgb(228, 91, 91);
+    color: #C65C2C;
     float: right;
     font-size: 1em;
     margin-top: 12px;
-    border-radius: 2px;
+    border-radius: 10px;
     padding-top: 7px;
     transition: all 0.2s ease-in;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .nav-button:hover {
+    background: rgb(239, 239, 239);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    color: #5FAF27;
   }
 }
 
@@ -187,7 +196,7 @@
 .note-card-title {
   width: 270px;
   color: white;
-  background: rgb(228, 91, 91);
+  background: #5D84AA;
   position: absolute;
   top: 0;
   left: 0;
@@ -249,7 +258,7 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
-  background: rgb(228, 91, 91);
+  background: #C65C2C;
   color: white;
   border-radius: 100%;
   width: 25px;
@@ -267,7 +276,7 @@
   background: rgb(198, 79, 79);
   color: white;
   box-shadow: 0 -3px 9px rgba(0,0,0,0.12), 0 -3px 6px rgba(0,0,0,0.24);
-  transform: rotate(90deg);
+  transform: rotate(30deg);
 }
 
 .note-card-edit {
@@ -275,7 +284,7 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
-  color: rgb(228, 91, 91);
+  color: #7DC64A;
   border-radius: 100%;
   width: 25px;
   height: 25px;
@@ -289,7 +298,7 @@
 }
 
 .note-card-edit:hover {
-  color: rgb(198, 79, 79);
+  color: #5FAF27;
   text-shadow: 0 6px 15px rgba(0,0,0,0.12), 0 6px 12px rgba(0,0,0,0.24);
   transform: rotate(90deg);
 }
@@ -352,11 +361,11 @@
   border: none;
   font-size: 1.5em;
   text-align: center;
-  border-bottom: 8px solid rgb(228, 91, 91);
-  border-top: 8px solid rgb(228, 91, 91);
+  border-bottom: 8px solid #5D84AA;
+  border-top: 8px solid #5D84AA;
   font-family: 'Josefin Slab', serif;
   width: 600px;
-  background-color: rgb(228, 91, 91);
+  background-color: #5D84AA;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -397,7 +406,7 @@
   font-family: 'Josefin Slab', serif;
   height: 40px;
   width: 100px;
-  background: rgb(228, 91, 91);
+  background: #BEEE9C;
   color: white;
   float: right;
   font-size: 1.5em;
@@ -406,10 +415,11 @@
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-top: 10px;
+  margin-bottom: 0.8em;
 }
 
 .note-button:hover {
-  background: rgb(198, 79, 79);
+  background: #7DC64A;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
 
@@ -457,7 +467,7 @@
 }
 
 .tag-button:hover {
-  background: rgb(57, 175, 251);
+  background: #3D6892;
 }
 
 .tag-input {
@@ -491,7 +501,7 @@
 }
 
 .tag {
-  padding-top: 2px;
+  padding-top: 6px;
   font-size: 1em;
   margin-left: 10px;
   margin-top: 5px;
@@ -511,7 +521,7 @@
 }
 
 .tag:hover {
-  background: rgb(57, 175, 251);
+  background: #3D6892;
   color: white;
 }
 
@@ -541,10 +551,10 @@
     border: none;
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 8px solid rgb(228, 91, 91);
-    border-top: 8px solid rgb(228, 91, 91);
+    border-bottom: 8px solid #5D84AA;
+    border-top: 8px solid #5D84AA;
     font-family: 'Josefin Slab', serif;
-    background-color: rgb(228, 91, 91);
+    background-color: #5D84AA;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -573,7 +583,7 @@
     font-family: 'Josefin Slab', serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #BEEE9C;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -585,7 +595,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #7DC64A;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -633,7 +643,7 @@
   }
 
   .tag-button:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
   }
 
   .tag-input {
@@ -667,7 +677,7 @@
   }
 
   .tag {
-    padding-top: 2px;
+    padding-top: 6px;
     font-size: 1em;
     margin-left: 10px;
     margin-top: 5px;
@@ -687,7 +697,7 @@
   }
 
   .tag:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
     color: white;
   }
 
@@ -717,10 +727,11 @@
     border: none;
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
+    border-top: 4px solid #5D84AA;
+    border-bottom: 2px solid #5D84AA;
     font-family: 'Josefin Slab', serif;
     width: 290px;
-    background-color: rgb(228, 91, 91);
+    background-color: #5D84AA;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -749,7 +760,7 @@
     font-family: 'Josefin Slab', serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #BEEE9C;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -761,7 +772,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #7DC64A;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -809,7 +820,7 @@
   }
 
   .tag-button:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
   }
 
   .tag-input {
@@ -843,7 +854,7 @@
   }
 
   .tag {
-    padding-top: 2px;
+    padding-top: 6px;
     font-size: 0.9em;
     margin-left: 5px;
     margin-top: 5px;
@@ -863,7 +874,7 @@
   }
 
   .tag:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
     color: white;
   }
 
