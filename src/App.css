@@ -96,7 +96,7 @@
   height: 40px;
   width: 100px;
   background: white;
-  color: #7DC64A;
+  color: #C65C2C;
   float: right;
   font-size: 1.5em;
   margin-right: 2px;
@@ -144,7 +144,7 @@
     height: 30px;
     width: 80px;
     background: white;
-    color: #7DC64A;
+    color: #C65C2C;
     float: right;
     font-size: 1em;
     margin-top: 12px;
@@ -361,11 +361,11 @@
   border: none;
   font-size: 1.5em;
   text-align: center;
-  border-bottom: 8px solid rgb(228, 91, 91);
-  border-top: 8px solid rgb(228, 91, 91);
+  border-bottom: 8px solid #5D84AA;
+  border-top: 8px solid #5D84AA;
   font-family: 'Josefin Slab', serif;
   width: 600px;
-  background-color: rgb(228, 91, 91);
+  background-color: #5D84AA;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -406,7 +406,7 @@
   font-family: 'Josefin Slab', serif;
   height: 40px;
   width: 100px;
-  background: rgb(228, 91, 91);
+  background: #BEEE9C;
   color: white;
   float: right;
   font-size: 1.5em;
@@ -415,10 +415,11 @@
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-top: 10px;
+  margin-bottom: 0.8em;
 }
 
 .note-button:hover {
-  background: rgb(198, 79, 79);
+  background: #7DC64A;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
 
@@ -466,7 +467,7 @@
 }
 
 .tag-button:hover {
-  background: rgb(57, 175, 251);
+  background: #3D6892;
 }
 
 .tag-input {
@@ -500,7 +501,7 @@
 }
 
 .tag {
-  padding-top: 2px;
+  padding-top: 6px;
   font-size: 1em;
   margin-left: 10px;
   margin-top: 5px;
@@ -520,7 +521,7 @@
 }
 
 .tag:hover {
-  background: rgb(57, 175, 251);
+  background: #3D6892;
   color: white;
 }
 
@@ -550,10 +551,10 @@
     border: none;
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 8px solid rgb(228, 91, 91);
-    border-top: 8px solid rgb(228, 91, 91);
+    border-bottom: 8px solid #5D84AA;
+    border-top: 8px solid #5D84AA;
     font-family: 'Josefin Slab', serif;
-    background-color: rgb(228, 91, 91);
+    background-color: #5D84AA;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -582,7 +583,7 @@
     font-family: 'Josefin Slab', serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #BEEE9C;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -594,7 +595,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #7DC64A;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -642,7 +643,7 @@
   }
 
   .tag-button:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
   }
 
   .tag-input {
@@ -676,7 +677,7 @@
   }
 
   .tag {
-    padding-top: 2px;
+    padding-top: 6px;
     font-size: 1em;
     margin-left: 10px;
     margin-top: 5px;
@@ -696,7 +697,7 @@
   }
 
   .tag:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
     color: white;
   }
 
@@ -726,10 +727,11 @@
     border: none;
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 2px solid rgb(228, 91, 91);
+    border-top: 4px solid #5D84AA;
+    border-bottom: 2px solid #5D84AA;
     font-family: 'Josefin Slab', serif;
     width: 290px;
-    background-color: rgb(228, 91, 91);
+    background-color: #5D84AA;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -758,7 +760,7 @@
     font-family: 'Josefin Slab', serif;
     height: 40px;
     width: 100px;
-    background: rgb(228, 91, 91);
+    background: #BEEE9C;
     color: white;
     float: right;
     font-size: 1.5em;
@@ -770,7 +772,7 @@
   }
 
   .note-button:hover {
-    background: rgb(198, 79, 79);
+    background: #7DC64A;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   }
 
@@ -818,7 +820,7 @@
   }
 
   .tag-button:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
   }
 
   .tag-input {
@@ -852,7 +854,7 @@
   }
 
   .tag {
-    padding-top: 2px;
+    padding-top: 6px;
     font-size: 0.9em;
     margin-left: 5px;
     margin-top: 5px;
@@ -872,7 +874,7 @@
   }
 
   .tag:hover {
-    background: rgb(57, 175, 251);
+    background: #3D6892;
     color: white;
   }
 
